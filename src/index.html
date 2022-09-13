@@ -7,6 +7,21 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+<script>
+  window.onload = function () {
+    document.body.classList.add('loaded_hiding');
+    window.setTimeout(function () {
+      document.body.classList.add('loaded');
+      document.body.classList.remove('loaded_hiding');
+    }, 500);
+  }
+</script>
+<div class="preloader">
+  <div class="preloader__row">
+    <div class="preloader__item"></div>
+    <div class="preloader__item"></div>
+  </div>
+</div>
 <header> 
    <nav>
        <div class="logo">Андрей Браун</div>
@@ -149,7 +164,7 @@
        <p>Сроки 0</p>
        <p>Стоимость 0</p>
     </div>
-    
+
     <div class="stat">
            <h2>НЕМНОГО СТАТИСТИКИ</h2>
             <div class="stat1">
@@ -173,6 +188,7 @@
                         <p>Наград получено</p>
             </div>
     </div>
+
     <h2>ОТЗЫВЫ</h2>
     <div class="feedback">
         <img  class ="miha" src="img/mihail.png" alt="">
