@@ -163,6 +163,7 @@ main{
     color: #79818d;
     padding: 0px 16px;
     margin: 30px 14px 0px 14px;
+    cursor: pointer;
 }
     
 }
@@ -232,8 +233,9 @@ h2{
 }
 
 .my_photo{
-    margin-top: 55px;
-    margin-left: 650px;
+    margin-top: 7%;
+    margin-left: 40%;
+    margin-bottom: 3%;
 }
 
 .about_me{
@@ -255,6 +257,7 @@ h2{
     padding: 10px 10px 10px 30px;
     background: url(../img/input.png) no-repeat;
     background-position: left;
+    cursor: pointer;
     
 }
 .resume:hover{
@@ -384,7 +387,8 @@ select{
 }
 
 .price select:hover{
-    transform: scale(2);
+    transform: scale(1.05);
+    border-radius: 5px;
 }
 
 .stat{
@@ -395,6 +399,9 @@ select{
 
 .stat h2{
     padding-top:  100px;
+}
+.stat:hover{
+    
 }
 .stat1{
     float: left;
