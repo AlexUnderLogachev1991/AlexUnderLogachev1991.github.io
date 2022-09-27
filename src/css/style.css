@@ -72,13 +72,14 @@ nav{
     height: 60px;
     background: #344051;
     position: fixed;
+    z-index: 10;
+    
 }
 
 .logo{
     color: #fff;
     font-size: 28px;
     line-height: 60px;
-    padding-left: 280px;
     float: left;
     -webkit-animation: comming 2s ease;
     -o-animation: comming 2s ease;
@@ -87,7 +88,6 @@ nav{
 
 .menu{
     float: left;
-    padding-left: 300px;
 }
 
 .menu li{
@@ -95,7 +95,7 @@ nav{
     line-height: 60px;
     color: #fff;
     margin-right: 40px;
-    font-size: 16px;
+    font-size: 13px;
     text-transform: uppercase;
    -webkit-animation: topshift 0.4s ease forwards;
    -o-animation: topshift 0.4s ease forwards;
@@ -131,11 +131,11 @@ main{
 
 .title__container{
     float: left;
-    margin: 432px 0px 0px 404px;
     color: #2c384a;
     text-align: center;
+    width: 100%;
     opacity: 0;
-    -webkit-animation: titlemove 1s forwards;
+   -webkit-animation: titlemove 1s forwards;
     -o-animation: titlemove 1s forwards;
     animation: titlemove 1s forwards;
     -webkit-animation-delay: 2s;
@@ -144,8 +144,10 @@ main{
 }
 
 .title__container h1{
-    font-size: 40px;
+    font-family: Arial, sans-serif;
+    font-size: 70px;
     font-weight: bold;
+    letter-spacing: 
 }
 
 .title__container h4{
@@ -212,6 +214,7 @@ main{
     color: white;
     transform: scale(1);
     display: inline-block;
+    text-decoration: none;
 }
 
 .menu li a:visited{
@@ -227,24 +230,24 @@ main{
 
 h2{
     margin-top: 100px;
-   text-align: center;
+    text-align: center;
     font-size: 20px;
     font-weight: bold;
 }
 
-.my_photo{
-   margin: 7% 40% 3% 40%;
+
+
+.about_me_container h2{
+    font-size: 33px;
+    margin: 110px 0 30px;
+    text-transform: uppercase;
+}
+.about_me_container p{
+    margin-top: 24px;
 }
 
-.about_me{
-    margin-left: 300px;
-    margin-right: 300px;
-    margin-top: 20px;    
-}
 
-.about_me p{
-    margin-top: 20px;
-}
+
 
 .resume{
     margin: 0 auto;
@@ -268,8 +271,7 @@ h2{
 
 .skills{
     background: url(../img/bg2.jpg);
-    height: 530px;
-    width: 100%;
+    height: 700px;
     margin-top: 90px;
     background-attachment: fixed;
     background-position: center;
@@ -277,45 +279,19 @@ h2{
     background-size: cover;
 }
 
-.skills>h2{
-    padding-top: 70px;
+.skills h2{
+    padding-top: 40px;
+}
+
+.skills p{
+    font-size: 12px;
 }
 
 .skill{
-    float: left;
-    height: 150px;
-    width: 200px;
-    text-align: center;
+    height: 40px;
     margin-top: 200px;
-    margin-left: 300px;
 }
 
-.skill1{
-    float: left;
-     height: 150px;
-    width: 200px;
-    text-align: center;
-     margin-top: 200px;
-    margin-left: 50px;
-}
-
-.skill2{
-    float: left;
-     height: 150px;
-    width: 200px;
-    text-align: center;
-     margin-top: 200px;
-    margin-left: 50px;
-}
-
-.skill3{
-    float: left;
-     height: 150px;
-    width: 200px;
-    text-align: center;
-     margin-top: 200px;
-    margin-left: 50px;
-}
 h3{
     color: #cf7600;
     margin-top: 40px;
@@ -329,10 +305,9 @@ h3{
 
 .cases{
     background: url(../img/photo.png);
-    width: 1200px;
+    width: 100%;
     height: 580px;
-    margin-left: 150px;
-    margin-top: 45px;
+    
 }
 
 .client{
@@ -571,4 +546,31 @@ select{
     background: url(../img/map.png);
     width: 100%;
     height: 350px;
+}
+
+.white-btn:visited{
+color: white;
+}
+
+@media(max-width: 991px){
+    .title__container, .title__container h4, .title__container input{
+        color: white;
+        position: relative;
+        z-index: 3;
+}
+    .title__container input{
+        border: 2px solid #fff;
+    }
+    .main{
+        position: relative;
+}
+    main::after{
+        content: "";
+        bottom: 0;
+        top: 0;
+        left: 0;
+        right: 0;
+        position: absolute;
+        background: rgba(0,0,0,0.4);
+    }
 }
